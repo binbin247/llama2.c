@@ -1,0 +1,5 @@
+.DS_Store
+/run
+/runq
+*.dSYM/
+/stories*.bin

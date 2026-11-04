@@ -1,0 +1,33 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang 构建 run.c（调试）",
+            "command": "/usr/bin/clang",
+            "args": [
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                "-g",
+                "-O0",
+                "-isysroot",
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX26.5.sdk",
+                "${workspaceFolder}/run.c",
+                "-o",
+                "${workspaceFolder}/run",
+                "-lm"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "使用兼容的 macOS SDK 编译 run.c，保留调试信息并关闭优化。"
+        }
+    ],
+    "version": "2.0.0"
+}

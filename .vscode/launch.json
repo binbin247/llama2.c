@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "调试 run.c（TinyStories）",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/run",
+            "args": [
+                "${workspaceFolder}/stories15M.bin",
+                "-z",
+                "${workspaceFolder}/tokenizer.bin",
+                "-n",
+                "128",
+                "-t",
+                "0.8",
+                "-s",
+                "42",
+                "-i",
+                "Once upon a time"
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang 构建 run.c（调试）"
+        }
+    ]
+}
